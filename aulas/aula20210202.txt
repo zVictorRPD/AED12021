@@ -1,0 +1,88 @@
+Algoritmos e estrutura de dados 1
+
+2 provas e 1 trabalho
+
+Algoritmos
+Complexidade de algoritmos
+
+Listas Lineares
+	Listas encadeadas
+
+Pilhas e Filas
+
+Recursividade
+
+Métodos de Ordenação
+
+Tabelas de dispersão (HASH)
+
+Árvore Binária
+
+Blockchain
+
+Algoritmos
+
+	É uma sequência ordenada e finita de passos para resolver um problema.
+
+Problema (computacional)
+
+Uma pergunta, com uma entrada e uma saída
+
+Exemplo: Algoritmo para calcular o Máximo Divisor comum de dois números inteiros (Algoritmo de Euclides)
+
+Esse é algoritmo é eficiente.
+
+Três tipos de problemas:
+
+Problemas de Decisão
+
+	São problemas cuja resposta é SIM ou NÃO
+
+Problemas de Otimização
+
+	São problemas cuja resposta é uma estrutura de valoração/peso máximo entre várias estruturas possíveis
+
+Problemas de Localização
+
+	São problemas cujas resposta é uma estrutura
+
+É possível transforma um problema de otimização ou de localização em um problema de decisão.
+
+Três tipos de algoritmos
+
+Algoritmos Determinísticos
+
+	Algoritmos cuja solução está 100% correta, executando sempre da mesma forma para uma mesma entrada
+
+Algoritmos Probabilísticos
+
+	Algoritmos cuja solução pode ter uma chance mínima de estar incorreta
+
+Algoritmos Aproximativos
+
+	Algoritmos cuja solução está garantida em estar próxima da solução por uma margem conhecida
+
+Análise dos algoritmo
+
+Exemplo
+
+//Algoritmo do cachorro
+cachorro = 0;
+
+for (i = 1; i < TAMANHO; i++) {
+	if (lista[i] > lista[cachorro]) {
+		cachorro = i;
+	}
+}
+
+printfn("%d", lista[cachorro]);
+
+Teorema: O Algoritmo do cachorro calcula corretamente o índice do maior elemento de uma lista e o imprime.
+
+Corretude do Algoritmo
+
+	Um algoritmo é correto quando dada a saída de dele, essa saída está correta
+
+Completude do Algoritmo
+
+	Um algoritmo é completo quando para qualquer entrada ele produz uma saída

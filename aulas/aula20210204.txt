@@ -1,0 +1,73 @@
+Complexidade de algoritmos
+
+Uma forma de medição da eficiência de um algoritmo.
+Essa medida ela deve ser INDEPENDENTE da máquina.
+Medimos um algoritmo contando os passos que ele elva para executar.
+Porém a entrada do algoritmo reflete no tempo de execução.
+
+Por convenção chamamos o tamanho da entrada de N. E a quantidade de passos fica sendo um função de N.
+Quando vamos contar, muitas vezes é impraticável saber os passos com exatidão. Por isso muitas vezes pensamos num pior caso e num melhor.
+
+Daí temos que qualquer passo unitário é executado em tempo constante. As repetições ( e as recursões) que dão o elemento em função da entrada. Mas apenas quando a entrada possui tamanha variável a cada instância
+
+Complexidade assintótica
+
+Na prática, não contamos exatamente os passos (a não ser numa sintonia fina, quando queremos comparar dois algoritmo parecidos). O que fazemos é comparar o nosso algoritmo com funções simples, fazendo a seguinte pergunta.
+
+O tempo do meu algoritmo cresce mais rápido que essa função?
+
+Quais funções são essas.
+
+f(x) = 1 -> função constante
+f(x) = n -> função linear
+f(x) = n^2 -> função quadrática
+f(x) = n^k -> k constante, função polinomial
+f(x) = log(n) -> função logarítmica
+f(x) = 2^n -> função exponencial
+f(x) = n! -> função fatorial
+f(x) = n^n -> função horrível
+f(x) = sqrt(n) -> função raiz quadrada
+f(x) = n.log(n) -> linear vezes logaritmo
+
+Notação O
+
+Sejam f e h funções reais positivas de variável inteira n.
+Diz-se que f é O(h), escrevendo f = O(h), quando existir uma constante c > 0 e um inteiro n_0, tal que:
+
+Existe um n > n_0 tal que f(n) <= c.h(n)
+
+Na prática isso signica que a função não cresce mais rápido que a função h
+
+f(n) = n² - 1 = O(n²)
+f(n) = 5*2^n + 5*n^10 = O(2^n)
+
+Algumas regrinhas:
+
+O(g + h) = O(g) + O(h)
+O(k * g) = k * O(g) = O(g)
+
+Note que:
+
+n^2 = O(n^3), mas n^3 /= O(n^2)
+e
+n^2 + 1 = O(n^2) e n^2 = O(n^2 + 1)
+
+Com isso temos hierarquia
+
+O(1) < O(log(n)) < O((log(n))^k) < O(n^(1/2)) < O(n) < O(n*log(n)) < O(n^2) < O(n^k) <Barreira< O(2^n) < O(n!) < O(n^n)
+
+Exemplo na prática
+
+Imaginem um jogo de tiro em primeira pessoa frenético. Suponha que existam N objetos, de cenário, a NPC e players e projéteis.
+A cada projétil é necessário uma verificação de colisão.
+Isso é uma combinação de n dois a dois n*(n-1)/2 = (n^2 - n)/2 = O(n^2)
+
+Porém, queremos um gráfico fluido a 60fps a full HD. Então essa operção precisa ser muito eficiente.
+O processamente precisa gerar 1920x1080 pixels sessenta vezes por segundo.
+Agora, imaginemos que o jogo sofreu um update, com mais gráfico, mais players mais cenário e em 4k
+3840x2160.
+Ou seja multiplica a tela por 4
+
+Antes tínhamos P pixels, depois temos 4P pixels.
+Se uma operação levava O(n^2) isso era algo da ordem de P^2, agora temos (4P)^2 que é 16P^2.
+	Logo, depois do update o processamento é cerca 16 vezes mais trabalhoso
