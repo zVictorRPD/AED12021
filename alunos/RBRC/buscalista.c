@@ -61,4 +61,6 @@ int main(int argc, char *argv[])
 	}	
 	
 	fclose(arquivo);
+	
+	return 0;
 }
