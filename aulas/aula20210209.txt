@@ -3,3 +3,9 @@ Usando o git/github
 Repositório do curso:
 
 https://github.com/RafaelBT/AED12021
+
+Exercício:
+
+1) Clonar o repositório do curso
+2) Fazer um programa que faz uma busca numa lista usando o código disponível
+3) Fazer o push do seu código num diretórios com suas iniciais na pasta aluno
