@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "misc.h"
 #include <time.h>
+#include "misc.h"
+
 
 //Buscar número na lista
 int main (void){
