@@ -40,8 +40,6 @@ int ordenalista(int tam) {
 	return 0;
 }
 
-
-
 int geralista(int tam) {
 
 	FILE *file;
@@ -73,8 +71,6 @@ char* buscar(int posicao) {
     int count = 0;
     
     while(fgets(numero, 100, arq) != NULL){
-        
-        printf("Posição %s", numero);
         
         if(count == posicao)
             break;
