@@ -9,7 +9,7 @@
 #include <time.h>
 #include "misc.h"
 
-int compara(int *a, int *b) {
+/* int compara(int *a, int *b) {
 	if (*a < *b) return -1;
 	else if (*a==*b) return 0;
 	else return 1;
@@ -38,7 +38,7 @@ int ordenalista(int tam) {
 	fclose(entrada);
 	fclose(saida);
 	return 0;
-}
+}*/
 
 
 
